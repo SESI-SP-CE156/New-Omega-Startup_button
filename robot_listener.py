@@ -61,7 +61,7 @@ def main():
         
         while True:
             if ser.in_waiting > 0:
-                linha = ser.readline().decode('utf-8').strip()
+                linha = ser.readline().decode('utf-8', errors='ignore').strip()
                 
                 if linha == "START_ROBOT_BOT":
                     print("--> Sinal de START recebido do ESP-32!")
