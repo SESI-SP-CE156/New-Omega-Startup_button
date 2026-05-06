@@ -3,8 +3,8 @@ Description=Listener Serial para o Robo Omega
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /home/new-omega/New-Omega-Startup_button/robot_listener.py
-WorkingDirectory=/home/new-omega
+ExecStart=/usr/bin/python3 /home/new-omega/Documents/New-Omega-Startup_button/robot_listener.py
+WorkingDirectory=/home/new-omega/Documents/New-Omega-Startup_button
 StandardOutput=inherit
 StandardError=inherit
 Restart=always
